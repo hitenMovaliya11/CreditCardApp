@@ -91,9 +91,9 @@ const CardDetail = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.cardContainer}>
-        {cardData.length === 0
+        {cardData?.length === 0
           ? renderEmptyList()
-          : cardData.map((card, i) => {
+          : cardData?.map((card, i) => {
               const {
                 bankName,
                 cardNumber,
